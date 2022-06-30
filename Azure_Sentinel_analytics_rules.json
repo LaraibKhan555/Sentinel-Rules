@@ -8,10 +8,6 @@
     },
     "resources": [
         {
-            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/a96e3081-9170-47e8-9b45-6ac067264ccf')]",
-            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/a96e3081-9170-47e8-9b45-6ac067264ccf')]",
-            "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules",
-            "kind": "Scheduled",
             "apiVersion": "2021-10-01-preview",
             "properties": {
                 "displayName": "Detecting Login failure on both Linux and Windows",
@@ -78,10 +74,6 @@
             }
         },
         {
-            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/a204e71e-7f61-48b1-8050-3d1a7e082cd3')]",
-            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/a204e71e-7f61-48b1-8050-3d1a7e082cd3')]",
-            "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules",
-            "kind": "Scheduled",
             "apiVersion": "2021-10-01-preview",
             "properties": {
                 "displayName": "Detecting Login Failures Attempt on Windows Machine",
@@ -154,10 +146,6 @@
             }
         },
         {
-            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/1c70f396-e950-4618-b429-0a7f000a6868')]",
-            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/1c70f396-e950-4618-b429-0a7f000a6868')]",
-            "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules",
-            "kind": "Scheduled",
             "apiVersion": "2021-10-01-preview",
             "properties": {
                 "displayName": "User login to Linux Machine",
@@ -195,11 +183,7 @@
                 "sentinelEntitiesMappings": null
             }
         },
-        {
-            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/a96e3081-9170-47e8-9b45-6ac067264ccf/actions/44894625efb748a0b224c61456a86647')]",
-            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/a96e3081-9170-47e8-9b45-6ac067264ccf/44894625efb748a0b224c61456a86647')]",
-            "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules/actions",
-            "apiVersion": "2021-10-01-preview",
+        { "2021-10-01-preview",
             "properties": {
                 "ruleId": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/a96e3081-9170-47e8-9b45-6ac067264ccf')]",
                 "triggerUri": "[listCallbackURL(concat('/subscriptions/dac2b6cb-7c07-4d09-bebe-2fcb017db92f/resourceGroups/securiment/providers/Microsoft.Logic/workflows/AddIndicatorsToWatchlist','/triggers/Microsoft_Sentinel_alert'),'2016-06-01').value]",
@@ -210,11 +194,7 @@
                 "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/a96e3081-9170-47e8-9b45-6ac067264ccf')]"
             ]
         },
-        {
-            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/a204e71e-7f61-48b1-8050-3d1a7e082cd3/actions/44894625efb748a0b224c61456a86647')]",
-            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/a204e71e-7f61-48b1-8050-3d1a7e082cd3/44894625efb748a0b224c61456a86647')]",
-            "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules/actions",
-            "apiVersion": "2021-10-01-preview",
+        { "2021-10-01-preview",
             "properties": {
                 "ruleId": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/a204e71e-7f61-48b1-8050-3d1a7e082cd3')]",
                 "triggerUri": "[listCallbackURL(concat('/subscriptions/dac2b6cb-7c07-4d09-bebe-2fcb017db92f/resourceGroups/securiment/providers/Microsoft.Logic/workflows/AddIndicatorsToWatchlist','/triggers/Microsoft_Sentinel_alert'),'2016-06-01').value]",
@@ -225,11 +205,7 @@
                 "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/a204e71e-7f61-48b1-8050-3d1a7e082cd3')]"
             ]
         },
-        {
-            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/a204e71e-7f61-48b1-8050-3d1a7e082cd3/actions/799661fd9b5d4b16a9c59d6365e29e4e')]",
-            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/a204e71e-7f61-48b1-8050-3d1a7e082cd3/799661fd9b5d4b16a9c59d6365e29e4e')]",
-            "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules/actions",
-            "apiVersion": "2021-10-01-preview",
+        { "2021-10-01-preview",
             "properties": {
                 "ruleId": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/a204e71e-7f61-48b1-8050-3d1a7e082cd3')]",
                 "triggerUri": "[listCallbackURL(concat('/subscriptions/dac2b6cb-7c07-4d09-bebe-2fcb017db92f/resourceGroups/securiment/providers/Microsoft.Logic/workflows/AddAnItemInWatchList','/triggers/When_a_response_to_an_Azure_Sentinel_alert_is_triggered'),'2016-06-01').value]",
@@ -240,11 +216,7 @@
                 "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/a204e71e-7f61-48b1-8050-3d1a7e082cd3')]"
             ]
         },
-        {
-            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/1c70f396-e950-4618-b429-0a7f000a6868/actions/d9854e5387f2452db9c4793324462875')]",
-            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/1c70f396-e950-4618-b429-0a7f000a6868/d9854e5387f2452db9c4793324462875')]",
-            "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules/actions",
-            "apiVersion": "2021-10-01-preview",
+        { "2021-10-01-preview",
             "properties": {
                 "ruleId": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/1c70f396-e950-4618-b429-0a7f000a6868')]",
                 "triggerUri": "[listCallbackURL(concat('/subscriptions/dac2b6cb-7c07-4d09-bebe-2fcb017db92f/resourceGroups/securiment/providers/Microsoft.Logic/workflows/test-logicApp','/triggers/When_a_response_to_an_Azure_Sentinel_alert_is_triggered'),'2016-06-01').value]",
