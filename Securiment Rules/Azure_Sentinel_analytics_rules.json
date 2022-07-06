@@ -10,7 +10,7 @@
         {
             "apiVersion": "2021-10-01-preview",
             "properties": {
-                "displayName": "Detecting Login failure on both Linux and Windows",
+                "displayName": "Detecting Login failure on both Linux and Windows - updated from github",
                 "description": "",
                 "severity": "Medium",
                 "enabled": true,
@@ -76,7 +76,7 @@
         {
             "apiVersion": "2021-10-01-preview",
             "properties": {
-                "displayName": "Detecting Login Failures Attempt on Windows Machine",
+                "displayName": "Detecting Login Failures Attempt on Windows Machine - updated from github",
                 "description": "",
                 "severity": "Medium",
                 "enabled": true,
@@ -148,7 +148,7 @@
         {
             "apiVersion": "2021-10-01-preview",
             "properties": {
-                "displayName": "User login to Linux Machine",
+                "displayName": "User login to Linux Machine - updated from github",
                 "description": "Signin to Linux Server",
                 "severity": "Medium",
                 "enabled": true,
