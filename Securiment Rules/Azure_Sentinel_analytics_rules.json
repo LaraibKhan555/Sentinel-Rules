@@ -10,7 +10,7 @@
         {
             "apiVersion": "2021-10-01-preview",
             "properties": {
-                "displayName": "Detecting Login failure on both Linux and Windows - updated from github",
+                "displayName": "Detecting Login failure on both Linux and Windows - updated from git hub",
                 "description": "",
                 "severity": "Medium",
                 "enabled": true,
