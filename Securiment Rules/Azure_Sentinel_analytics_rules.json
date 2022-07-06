@@ -8,9 +8,298 @@
     },
     "resources": [
         {
+            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/BuiltInFusion')]",
+            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/BuiltInFusion')]",
+            "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules",
+            "kind": "Fusion",
             "apiVersion": "2021-10-01-preview",
             "properties": {
-                "displayName": "Detecting Login failure on both Linux and Windows - updated from git hub",
+                "enabled": true,
+                "alertRuleTemplateName": "f71aba3d-28fb-450b-b192-4e76a83015c8",
+                "sourceSettings": [
+                    {
+                        "enabled": true,
+                        "sourceName": "Anomalies",
+                        "sourceSubTypes": null
+                    },
+                    {
+                        "enabled": true,
+                        "sourceName": "Alert providers",
+                        "sourceSubTypes": [
+                            {
+                                "sourceSubTypeDisplayName": "Azure Active Directory Identity Protection",
+                                "sourceSubTypeName": "Azure Active Directory Identity Protection",
+                                "enabled": true,
+                                "severityFilters": {
+                                    "isSupported": true,
+                                    "filters": [
+                                        {
+                                            "severity": "High",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "severity": "Medium",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "severity": "Low",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "severity": "Informational",
+                                            "enabled": true
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "sourceSubTypeDisplayName": "Microsoft 365 Defender",
+                                "sourceSubTypeName": "Microsoft 365 Defender",
+                                "enabled": true,
+                                "severityFilters": {
+                                    "isSupported": true,
+                                    "filters": [
+                                        {
+                                            "severity": "High",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "severity": "Medium",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "severity": "Low",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "severity": "Informational",
+                                            "enabled": true
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "sourceSubTypeDisplayName": "Microsoft Cloud App Security",
+                                "sourceSubTypeName": "Microsoft Cloud App Security",
+                                "enabled": true,
+                                "severityFilters": {
+                                    "isSupported": true,
+                                    "filters": [
+                                        {
+                                            "severity": "High",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "severity": "Medium",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "severity": "Low",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "severity": "Informational",
+                                            "enabled": true
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "sourceSubTypeDisplayName": "Microsoft Defender for Cloud",
+                                "sourceSubTypeName": "Azure Defender",
+                                "enabled": true,
+                                "severityFilters": {
+                                    "isSupported": true,
+                                    "filters": [
+                                        {
+                                            "severity": "High",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "severity": "Medium",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "severity": "Low",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "severity": "Informational",
+                                            "enabled": true
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "sourceSubTypeDisplayName": "Microsoft Defender for Endpoint",
+                                "sourceSubTypeName": "Microsoft Defender for Endpoint",
+                                "enabled": true,
+                                "severityFilters": {
+                                    "isSupported": true,
+                                    "filters": [
+                                        {
+                                            "severity": "High",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "severity": "Medium",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "severity": "Low",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "severity": "Informational",
+                                            "enabled": true
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "sourceSubTypeDisplayName": "Microsoft Defender for Identity",
+                                "sourceSubTypeName": "Microsoft Defender for Identity",
+                                "enabled": true,
+                                "severityFilters": {
+                                    "isSupported": true,
+                                    "filters": [
+                                        {
+                                            "severity": "High",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "severity": "Medium",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "severity": "Low",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "severity": "Informational",
+                                            "enabled": true
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "sourceSubTypeDisplayName": "Microsoft Defender for IoT",
+                                "sourceSubTypeName": "Azure Defender for IoT",
+                                "enabled": true,
+                                "severityFilters": {
+                                    "isSupported": true,
+                                    "filters": [
+                                        {
+                                            "severity": "High",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "severity": "Medium",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "severity": "Low",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "severity": "Informational",
+                                            "enabled": true
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "sourceSubTypeDisplayName": "Microsoft Defender for Office 365",
+                                "sourceSubTypeName": "Microsoft Defender for Office 365",
+                                "enabled": true,
+                                "severityFilters": {
+                                    "isSupported": true,
+                                    "filters": [
+                                        {
+                                            "severity": "High",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "severity": "Medium",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "severity": "Low",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "severity": "Informational",
+                                            "enabled": true
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "sourceSubTypeDisplayName": "Azure Sentinel scheduled analytics rules",
+                                "sourceSubTypeName": "Azure Sentinel scheduled analytics rules",
+                                "enabled": true,
+                                "severityFilters": {
+                                    "isSupported": true,
+                                    "filters": [
+                                        {
+                                            "severity": "High",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "severity": "Medium",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "severity": "Low",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "severity": "Informational",
+                                            "enabled": true
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "sourceSubTypeDisplayName": "Azure Sentinel NRT analytic rules",
+                                "sourceSubTypeName": "Azure Sentinel NRT analytic rules",
+                                "enabled": true,
+                                "severityFilters": {
+                                    "isSupported": true,
+                                    "filters": [
+                                        {
+                                            "severity": "High",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "severity": "Medium",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "severity": "Low",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "severity": "Informational",
+                                            "enabled": true
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "scenarioExclusionPatterns": []
+            }
+        },
+        {
+            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/a96e3081-9170-47e8-9b45-6ac067264ccf')]",
+            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/a96e3081-9170-47e8-9b45-6ac067264ccf')]",
+            "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules",
+            "kind": "Scheduled",
+            "apiVersion": "2021-10-01-preview",
+            "properties": {
+                "displayName": "Detecting Login failure on both Linux and Windows",
                 "description": "",
                 "severity": "Medium",
                 "enabled": true,
@@ -74,9 +363,13 @@
             }
         },
         {
+            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/a204e71e-7f61-48b1-8050-3d1a7e082cd3')]",
+            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/a204e71e-7f61-48b1-8050-3d1a7e082cd3')]",
+            "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules",
+            "kind": "Scheduled",
             "apiVersion": "2021-10-01-preview",
             "properties": {
-                "displayName": "Detecting Login Failures Attempt on Windows Machine - updated from github",
+                "displayName": "Detecting Login Failures Attempt on Windows Machine",
                 "description": "",
                 "severity": "Medium",
                 "enabled": true,
@@ -146,9 +439,10 @@
             }
         },
         {
+            
             "apiVersion": "2021-10-01-preview",
             "properties": {
-                "displayName": "User login to Linux Machine - updated from github",
+                "displayName": "User login to Linux Machine",
                 "description": "Signin to Linux Server",
                 "severity": "Medium",
                 "enabled": true,
@@ -184,10 +478,14 @@
             }
         },
         {
-            
+            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/a96e3081-9170-47e8-9b45-6ac067264ccf/actions/44894625efb748a0b224c61456a86647')]",
+            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/a96e3081-9170-47e8-9b45-6ac067264ccf/44894625efb748a0b224c61456a86647')]",
+            "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules/actions",
             "apiVersion": "2021-10-01-preview",
             "properties": {
-            
+                "ruleId": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/a96e3081-9170-47e8-9b45-6ac067264ccf')]",
+                "triggerUri": "[listCallbackURL(concat('/subscriptions/dac2b6cb-7c07-4d09-bebe-2fcb017db92f/resourceGroups/securiment/providers/Microsoft.Logic/workflows/AddIndicatorsToWatchlist','/triggers/Microsoft_Sentinel_alert'),'2016-06-01').value]",
+                "logicAppResourceId": "/subscriptions/dac2b6cb-7c07-4d09-bebe-2fcb017db92f/resourceGroups/securiment/providers/Microsoft.Logic/workflows/AddIndicatorsToWatchlist",
                 "operatesOn": "Alert"
             },
             "dependsOn": [
@@ -195,10 +493,14 @@
             ]
         },
         {
-            
+            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/a204e71e-7f61-48b1-8050-3d1a7e082cd3/actions/44894625efb748a0b224c61456a86647')]",
+            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/a204e71e-7f61-48b1-8050-3d1a7e082cd3/44894625efb748a0b224c61456a86647')]",
+            "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules/actions",
             "apiVersion": "2021-10-01-preview",
             "properties": {
-               
+                "ruleId": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/a204e71e-7f61-48b1-8050-3d1a7e082cd3')]",
+                "triggerUri": "[listCallbackURL(concat('/subscriptions/dac2b6cb-7c07-4d09-bebe-2fcb017db92f/resourceGroups/securiment/providers/Microsoft.Logic/workflows/AddIndicatorsToWatchlist','/triggers/Microsoft_Sentinel_alert'),'2016-06-01').value]",
+                "logicAppResourceId": "/subscriptions/dac2b6cb-7c07-4d09-bebe-2fcb017db92f/resourceGroups/securiment/providers/Microsoft.Logic/workflows/AddIndicatorsToWatchlist",
                 "operatesOn": "Alert"
             },
             "dependsOn": [
@@ -206,10 +508,14 @@
             ]
         },
         {
-            
+            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/a204e71e-7f61-48b1-8050-3d1a7e082cd3/actions/799661fd9b5d4b16a9c59d6365e29e4e')]",
+            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/a204e71e-7f61-48b1-8050-3d1a7e082cd3/799661fd9b5d4b16a9c59d6365e29e4e')]",
+            "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules/actions",
             "apiVersion": "2021-10-01-preview",
             "properties": {
-               
+                "ruleId": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/a204e71e-7f61-48b1-8050-3d1a7e082cd3')]",
+                "triggerUri": "[listCallbackURL(concat('/subscriptions/dac2b6cb-7c07-4d09-bebe-2fcb017db92f/resourceGroups/securiment/providers/Microsoft.Logic/workflows/AddAnItemInWatchList','/triggers/When_a_response_to_an_Azure_Sentinel_alert_is_triggered'),'2016-06-01').value]",
+                "logicAppResourceId": "/subscriptions/dac2b6cb-7c07-4d09-bebe-2fcb017db92f/resourceGroups/securiment/providers/Microsoft.Logic/workflows/AddAnItemInWatchList",
                 "operatesOn": "Alert"
             },
             "dependsOn": [
@@ -217,10 +523,14 @@
             ]
         },
         {
-            
+            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/1c70f396-e950-4618-b429-0a7f000a6868/actions/d9854e5387f2452db9c4793324462875')]",
+            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/1c70f396-e950-4618-b429-0a7f000a6868/d9854e5387f2452db9c4793324462875')]",
+            "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules/actions",
             "apiVersion": "2021-10-01-preview",
             "properties": {
-               
+                "ruleId": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/1c70f396-e950-4618-b429-0a7f000a6868')]",
+                "triggerUri": "[listCallbackURL(concat('/subscriptions/dac2b6cb-7c07-4d09-bebe-2fcb017db92f/resourceGroups/securiment/providers/Microsoft.Logic/workflows/test-logicApp','/triggers/When_a_response_to_an_Azure_Sentinel_alert_is_triggered'),'2016-06-01').value]",
+                "logicAppResourceId": "/subscriptions/dac2b6cb-7c07-4d09-bebe-2fcb017db92f/resourceGroups/securiment/providers/Microsoft.Logic/workflows/test-logicApp",
                 "operatesOn": "Alert"
             },
             "dependsOn": [
